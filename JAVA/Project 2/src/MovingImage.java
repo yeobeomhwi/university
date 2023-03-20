@@ -71,7 +71,7 @@ public class MovingImage extends JPanel implements ActionListener, KeyListener {
 
     public static void main(String[] args) {
         JFrame frame = new JFrame("Moving Image");
-        Image image = new ImageIcon("C:/Users/여범휘/Desktop/java/test1/src/image.png").getImage();
+        Image image = new ImageIcon("C:/Users/여범휘/Desktop/university/JAVA/Project 2/src/image.png").getImage();
         MovingImage movingImage = new MovingImage(image);
         frame.add(movingImage);
         frame.setSize(1000, 1000);

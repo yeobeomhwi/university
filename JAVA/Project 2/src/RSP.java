@@ -1,6 +1,4 @@
 import java.awt.*;
-
-
 import javax.swing.*;
 import java.awt.event.*;
 import java.util.Random;
@@ -19,9 +17,9 @@ public class RSP extends JFrame implements ActionListener{
         panel.setLayout(new GridLayout(0,3));
         infor = new JTextField("아래의 버튼 중에서 하나를 클릭하시오");
         output = new JTextField(20);
-        rock = new JButton("ROCK");
-        paper = new JButton("PAPER");
-        scissor = new JButton("SCISSOR");
+        rock = new JButton("주먹");
+        paper = new JButton("보");
+        scissor = new JButton("가위");
         rock.addActionListener(this);
         paper.addActionListener(this);
         scissor.addActionListener(this);
@@ -39,17 +37,17 @@ public class RSP extends JFrame implements ActionListener{
         Random random = new Random();
         int computer = random.nextInt(3);
         if(e.getSource()==rock){
-            if(computer == SCISSOR) output.setText("사용자 승리");
-            else if (computer == ROCK) output.setText("비김");
-            else output.setText("컴퓨터 승리");
+            if(computer == SCISSOR) output.setText("컴퓨터: 가위 / 사용자 승리");
+            else if (computer == ROCK) output.setText("컴퓨터: 주먹 / 비김");
+            else output.setText("컴퓨터: 보 / 컴퓨터 승리");
         }else if(e.getSource()== paper){
-            if(computer == ROCK) output.setText("사용자 승리");
-            else if (computer == PAPER) output.setText("비김");
-            else output.setText("컴퓨터 승리");
+            if(computer == ROCK) output.setText("컴퓨터: 주먹 /사용자 승리");
+            else if (computer == PAPER) output.setText("컴퓨터: 보 / 비김");
+            else output.setText("컴퓨터: 가위 / 컴퓨터 승리");
         }else if(e.getSource()== scissor){
-            if(computer == PAPER) output.setText("사용자 승리");
-            else if (computer == SCISSOR) output.setText("비김");
-            else output.setText("컴퓨터 승리");
+            if(computer == PAPER) output.setText("컴퓨터: 보 / 사용자 승리");
+            else if (computer == SCISSOR) output.setText("컴퓨터: 가위 / 비김");
+            else output.setText("컴퓨터: 주먹 / 컴퓨터 승리");
         }
     }
 }
