@@ -37,17 +37,17 @@ public class RSP extends JFrame implements ActionListener{
         Random random = new Random();
         int computer = random.nextInt(3);
         if(e.getSource()==rock){
-            if(computer == SCISSOR) output.setText("컴퓨터: 가위 / 사용자 승리");
-            else if (computer == ROCK) output.setText("컴퓨터: 주먹 / 비김");
-            else output.setText("컴퓨터: 보 / 컴퓨터 승리");
+            if(computer == SCISSOR) output.setText("컴퓨터: 가위 | 사용자: 주먹 [사용자 WIN]");
+            else if (computer == ROCK) output.setText("컴퓨터: 주먹 | 사용자: 주먹 [비김]");
+            else output.setText("컴퓨터: 보 | 사용자: 주먹 [컴퓨터 WIN]");
         }else if(e.getSource()== paper){
-            if(computer == ROCK) output.setText("컴퓨터: 주먹 /사용자 승리");
-            else if (computer == PAPER) output.setText("컴퓨터: 보 / 비김");
-            else output.setText("컴퓨터: 가위 / 컴퓨터 승리");
+            if(computer == ROCK) output.setText("컴퓨터: 주먹 | 사용자: 보 [사용자 WIN]");
+            else if (computer == PAPER) output.setText("컴퓨터: 보 | 사용자: 보 [비김]");
+            else output.setText("컴퓨터: 가위 | 사용자: 보 [컴퓨터 WIN]");
         }else if(e.getSource()== scissor){
-            if(computer == PAPER) output.setText("컴퓨터: 보 / 사용자 승리");
-            else if (computer == SCISSOR) output.setText("컴퓨터: 가위 / 비김");
-            else output.setText("컴퓨터: 주먹 / 컴퓨터 승리");
+            if(computer == PAPER) output.setText("컴퓨터: 보 | 사용자: 가위 [사용자 WIN]");
+            else if (computer == SCISSOR) output.setText("컴퓨터: 가위 | 사용자: 가위 [비김]");
+            else output.setText("컴퓨터: 주먹 | 사용자: 가위 [컴퓨터 WIN]");
         }
     }
 }
