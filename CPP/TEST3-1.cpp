@@ -18,10 +18,10 @@ int main(){
     Circle donut;
     donut.radius = 1 ;
     double area = donut.getArea();
-    cout << "donut ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" << area << endl;
+    cout << "donut ¸éÀûÀº" << area << endl;
 
     Circle pizza;
     pizza.radius = 30;
     area = pizza.getArea();
-    cout << "pizza ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" << area <<endl;
+    cout << "pizza ¸éÀûÀº" << area <<endl;
 }
