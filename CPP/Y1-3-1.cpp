@@ -3,8 +3,8 @@ using namespace std;
 
 int main(){
     int a;
-    cout <<" а╓╪Ж ют╥б >>";
-    cin >> a;
+    cout <<" О©╫О©╫О©╫О©╫ О©╫т╥О©╫ >>";
+    cin >> a;dec
 
     for(int i=0; i<a; i++){
         for(int j=0; j<a-i; j++){

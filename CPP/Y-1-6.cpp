@@ -1,25 +1,25 @@
 #include <iostream>
 using namespace std;
 
-void swapArray(int *p, int *q, int size); // p, q는 배열을 가리키고, size는 배열의 크기
-void printArray(int *p, int size); // p는 배열을 가리키고, size는 배열의 크기
+void swapArray(int *p, int *q, int size); // p, q?? ?迭?? ???????, size?? ?迭?? ???
+void printArray(int *p, int size); // p?? ?迭?? ???????, size?? ?迭?? ???
 
 int main() {
 	int a[] = { 1,2,3,4,5 };
 	int b[] = { 9,8,7,6,5 };
 
-	cout << "배열 a = ";
+	cout << "?迭 a = ";
 	printArray(a, 5);
 	
-	cout << "배열 b = ";
+	cout << "?迭 b = ";
 	printArray(b, 5);
 
-	cout << "swapArray() 실행...\n";
+	cout << "swapArray() ????...\n";
 	swapArray(a, b, 5);
-	cout << "배열 a = ";
+	cout << "?迭 a = ";
 	printArray(a, 5);
 	
-	cout << "배열 b = ";
+	cout << "?迭 b = ";
 	printArray(b, 5);
 }
 void swapArray(int *p, int *q, int size) {
@@ -27,8 +27,8 @@ void swapArray(int *p, int *q, int size) {
 		int tmp = *p;
 		*p = *q;
 		*q = tmp;
-		p++; // 배열 a의 다음 원소의 주소로 증가
-		q++; // 베열 b의 다음 원소의 주소로 증가
+		p++; // ?迭 a?? ???? ?????? ???? ????
+		q++; // ???? b?? ???? ?????? ???? ????
 	}
 }
 
