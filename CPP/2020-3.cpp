@@ -1,19 +1,20 @@
 #include <iostream>
-
 using namespace std;
 
-int GetSum(int a, int b) {
-    return a + b;
-}
-
-int GetSum(int a, int b, int c) {
-    return a + b + c;
-}
-
 int main() {
-    int sum1 = GetSum(10, 20);
-    int sum2 = GetSum(10, 20, 30);
-    cout << "sum1: " << sum1 << endl;
-    cout << "sum2: " << sum2 << endl;
-    return 0;
+	int a=10, b=20;
+	a=++b; // (1)
+	cout << "(1) a=" << a << ", b=" << b << "\n";
+
+	a=10, b=20;
+	a=(a>b)?3:-3; // (2)
+	cout << "(2) a=" << a << ", b=" << b << "\n";
+
+	a=10, b=20;
+	a=a+b%3+4; // (3)
+	cout << "(3) a=" << a << ", b=" << b << "\n";
+ 
+	a=10, b=20;
+	b >>= 2; // (4)
+	cout << "(4) a=" << a << ", b=" << b << "\n";
 }
