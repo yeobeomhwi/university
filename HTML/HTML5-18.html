@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #parent {
+            background: lightblue;
+            width: 90%;
+            height: 300px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        #child {
+            background: orangered;
+            width: 30%;
+            height: 100px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">여범휘 - 부모박스
+        <div id="child">자식박스</div>
+    </div>
+</body>
+</html>

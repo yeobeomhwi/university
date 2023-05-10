@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        ul{ background: lightgray; padding: 6px;}
+        li{ display: inline; padding: 10px 20px;}
+        li a{padding: 5px 10px; color: black; text-decoration:none;}
+        li a:hover{background: darkgray;}
+        li.dropdown{display: inline-block;}
+        .dropdown-content{
+            display: none; position: absolute;
+            background: ghostwhite; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        }
+        .dropdown-content a{
+            display: block; padding: 12px 16px;
+            text-decoration: none; text-align: left; color:black;
+        }
+        .dropdown-content a:hover{background: lavender;}
+        .dropdown:hover .dropdown-content{display: block;}
+    </style>
+</head>
+<body>
+    <h3>여범휘의 HTML5웹 프로그래밍</h3> <hr>
+    <ul>
+        <li class="dropdown">
+            <a href="#home">Home</a>
+        </li>
+        <li class="dropdown">
+            <a href="">Menu1</a>
+            <div class="dropdown-content">
+                <a href="#">Menu1-1</a>
+                <a href="#">Menu1-2</a>
+                <a href="#">Menu1-3</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="">Menu2</a>
+            <div class="dropdown-content">
+                <a href="#">Menu2-1</a>
+                <a href="#">Menu2-2</a>
+                <a href="#">Menu2-3</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="">Menu3</a>
+            <div class="dropdown-content">
+                <a href="#">Menu3-1</a>
+                <a href="#">Menu3-2</a>
+                <a href="#">Menu3-3</a>
+            </div>
+        </li>
+    </ul>
+    <div style="height: auto;">
+        <pre>메뉴 내용을 입력하세요.</pre>
+    </div>
+</body>
+</html>
