@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{width: 150px; height: 150px; }
+        #b1{background: red; top: 30px; right: 30px; visibility: hidden;}
+        #b2{background: orange; top: 50px; right: 50px; display: none;}
+        #b3{background: yellow; top: 70px; right: 70px; }
+
+        #in{display: inline-block; padding: 0px 30px; visibility: hidden;}
+        #out{background: orangered; width: 200px; padding: 10px 20px;}
+        #out:hover #in{visibility: visible;}
+
+    </style>
+</head>
+<body>
+    <h1>여범휘</h1> <hr>
+    <div id="b1">박스 1</div> 
+    <div id="b2">박스 2</div> 
+    <div id="b3">박스 3</div>
+
+    <h3>문제 : 우리나라의 남쪽 끝에 위치한 섬의 이름은? </h3>
+    <h3 id="out">답 : <span id="in"> 마라도</span></h3>
+</body>
+</html>
